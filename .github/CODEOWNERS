@@ -1,0 +1,3 @@
+* @org/stellar-dev-kit-maintainers
+/contracts/ @org/stellar-contract-reviewers
+/shared/auth/ @org/stellar-auth-reviewers

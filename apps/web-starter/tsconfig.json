@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "types": ["node", "vitest/globals"],
+    "paths": {
+      "@stellar-dev-kit/auth": ["../../shared/auth/src/index.ts"],
+      "@stellar-dev-kit/config": ["../../shared/config/src/index.ts"],
+      "@stellar-dev-kit/hooks": ["../../shared/hooks/src/index.ts"],
+      "@stellar-dev-kit/ui": ["../../shared/ui/src/index.ts"],
+      "@stellar-dev-kit/utils": ["../../shared/utils/src/index.ts"]
+    }
+  },
+  "include": ["src", "test"]
+}

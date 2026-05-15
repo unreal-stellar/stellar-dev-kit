@@ -1,0 +1,19 @@
+{
+  "name": "@stellar-dev-kit/web-starter",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@stellar-dev-kit/auth": "workspace:*",
+    "@stellar-dev-kit/config": "workspace:*",
+    "@stellar-dev-kit/ui": "workspace:*",
+    "@stellar-dev-kit/utils": "workspace:*"
+  }
+}

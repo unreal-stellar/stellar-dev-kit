@@ -1,0 +1,22 @@
+{
+  "name": "stellar-dev-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Contributor-first monorepo for building Stellar + Soroban apps.",
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "setup": "pnpm install",
+    "build": "pnpm -r --if-present build",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "lint": "pnpm -r --if-present lint",
+    "contracts:test": "cd contracts/counter && cargo test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@types/react": "^19.0.7",
+    "react": "^19.0.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.2.4"
+  }
+}
