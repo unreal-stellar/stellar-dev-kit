@@ -1,4 +1,3 @@
-```md
 # Stellar Dev Kit
 
 Stellar Dev Kit is a contributor-first pnpm monorepo for building production-ready [Stellar](https://stellar.org) and [Soroban](https://soroban.stellar.org) applications. It provides a curated set of reusable TypeScript packages, a wired-up starter app, and a Soroban smart contract example — all in a single, consistently typed and tested workspace.
@@ -14,7 +13,7 @@ It is designed for:
 ### Shared packages (`shared/`)
 
 | Package | Description |
-|---|---|
+| --- | --- |
 | `@stellar-dev-kit/auth` | Wallet session types, Stellar account ID validation, and the `AuthAdapter` interface for Freighter, Albedo, and Ledger |
 | `@stellar-dev-kit/config` | Environment-driven `AppConfig` loader with validated network passphrase and HTTPS-enforced RPC URL |
 | `@stellar-dev-kit/hooks` | `useAsyncAction` React hook — wraps any async function with `data`, `error`, and `loading` state |
@@ -24,18 +23,18 @@ It is designed for:
 ### Apps (`apps/`)
 
 | App | Description |
-|---|---|
+| --- | --- |
 | `web-starter` | Assembles all shared packages into a wallet-connected preview flow — validates an account, loads config, and renders a connect-wallet button |
 
 ### Contracts (`contracts/`)
 
 | Contract | Description |
-|---|---|
+| --- | --- |
 | `counter` | Minimal Soroban (Rust) smart contract with persistent counter storage, increment logic, and on-chain event emission |
 
 ## Project Structure
 
-```
+```text
 stellar-dev-kit/
 ├── apps/
 │   └── web-starter/          # Starter app consuming all shared packages
@@ -87,7 +86,7 @@ pnpm run contracts:test
 ## Available Scripts
 
 | Command | Description |
-|---|---|
+| --- | --- |
 | `pnpm run build` | Compile all TypeScript packages |
 | `pnpm run test` | Run Vitest suites across all packages |
 | `pnpm run typecheck` | Type-check all packages without emitting |
